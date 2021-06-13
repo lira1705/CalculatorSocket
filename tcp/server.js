@@ -1,5 +1,5 @@
 const net = require('net')
-const Calculator = require('../calculator')
+const Calculator = require('../calculator/calculator')
 
 const handleConnection = socket => {
     socket.on('error', (error) => {

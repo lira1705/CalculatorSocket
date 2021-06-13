@@ -1,6 +1,6 @@
 const dgram = require('dgram');
 const server = dgram.createSocket('udp4');
-const Calculator = require('../calculator')
+const Calculator = require('../calculator/calculator')
 
 server.on('message', (msg, rinfo) => {
     const operationParams = Calculator.formatMessage(msg);
