@@ -1,4 +1,4 @@
-# Exercício de Sockets UDP
+# Exercício de Sockets com calculadora
   
 Exercício voltado para a criação de uma calculadora em TCP e UDP.  
 
