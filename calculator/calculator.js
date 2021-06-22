@@ -32,3 +32,24 @@ exports.calculate = (opeartionParams) => {
             return "failed to calculate"
     }
 }
+
+exports.simpleCalculation = (msg) => {
+    let result = new Uint16Array(1);
+    switch(msg[2]) {
+        case 1:
+            result[0] = msg[0] + msg[1]
+            break;
+        case 2:
+            result[0] = msg[0] - msg[1]
+            break;
+        case 3:
+            result[0] = msg[0] * msg[1]
+            break;
+        case 4:
+            result[0] = msg[0] / msg[1]
+        break;
+        default:
+            result[0] = undefined;
+    }
+    return result;
+}
